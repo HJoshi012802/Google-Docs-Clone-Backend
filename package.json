@@ -1,0 +1,19 @@
+{
+  "name": "google_docs_server",
+  "version": "1.0.0",
+  "description": "Node Express Socket MongoDB Backend for Google Docs Clone Application",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
