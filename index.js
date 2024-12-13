@@ -44,8 +44,8 @@ app.get('/', (req, res) => {
             socket.broadcast.to(documentId).emit("recive-quill-changes",delta);
         })
 
-        socket.on("save-document",async (document)=>{
-           await Document.findByIdAndUpdate(documentId,{document})
+        socket.on("save-document",async (data)=>{
+           await Document.findByIdAndUpdate(documentId,{data})
         })
     })
     
